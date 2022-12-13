@@ -132,7 +132,7 @@
   import Dialog, { Content, Actions as DialogActions, Title as DialogTitle } from '@smui/dialog';
   import List, { Graphic, Item, Text } from '@smui/list';
   import Snackbar, { Label as SnackbarLabel, Actions } from '@smui/snackbar';
-  import { BScript, BScriptType } from "../../parsers/klonoa/bscript";
+  import { BScript, BScriptType } from "./bscript";
   import CommandListItem from './CommandListItem.svelte';
   import { animateScroll } from 'svelte-scrollto-element';
 

@@ -11,8 +11,8 @@
     "build": "npm run prepare && vite build",
     "prepare": "npm run smui-theme-light && npm run smui-theme-dark",
     "preview": "vite preview",
-    "smui-theme-light": "smui-theme compile public/smui.css -i src/theme",
-    "smui-theme-dark": "smui-theme compile public/smui-dark.css -i src/theme/dark"
+    "smui-theme-light": "smui-theme compile public/smui.css -i src/styles/theme",
+    "smui-theme-dark": "smui-theme compile public/smui-dark.css -i src/styles/theme/dark"
   },
   "devDependencies": {
     "@material/typography": "^14.0.0",

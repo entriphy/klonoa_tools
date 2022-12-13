@@ -1,0 +1,7 @@
+.mdc-deprecated-list-item__text {
+    text-overflow: clip;
+}
+  
+.mdc-deprecated-list-item__graphic {
+    width: 32px;
+}

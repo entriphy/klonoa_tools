@@ -28,7 +28,7 @@
 <script lang="ts">
   import List, { Graphic, Label, Item, Meta, Text } from '@smui/list';
   import Textfield from '@smui/textfield';
-  import { ArgumentType, BScriptCommand, BScriptCommandArgument } from "../../parsers/klonoa/bscript";
+  import { ArgumentType, BScriptCommand, BScriptCommandArgument } from "./bscript";
 
   export let command: BScriptCommand;
   export let index: number;

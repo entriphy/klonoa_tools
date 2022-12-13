@@ -146,16 +146,11 @@ export class BScript {
                 if (size % 2 == 1) {
                     size += 1;
                     if (str === "") {
-                        strings.push(str);
-                        console.log("\tlol");
                         return;
                     }
                 }
                 strings.push(str);
                 size += str.length + 1;
-                if (str === "") {
-                    console.log("\tlol2");
-                }
             }
         });
         if (size % 2 == 1) {

@@ -15,17 +15,21 @@ function externalCSSPlugin() {
     transformIndexHtml: {
       enforce: 'post',
       transform(html, ctx) {
-        console.log(ctx.server);
         return [
           {
             tag: "link",
             attrs: {"rel": "stylesheet", "type": "text/css", "href": "/smui.css", "media": "(prefers-color-scheme: light)"},
-            injectTo: ctx.server ? "body.prepend" : "head"
+            injectTo: "head"
           },
           {
             tag: "link",
             attrs: {"rel": "stylesheet", "type": "text/css", "href": "/smui-dark.css", "media": "(prefers-color-scheme: dark)"},
-            injectTo: ctx.server ? "body.prepend" : "head"
+            injectTo: "head"
+          },
+          {
+            tag: "link",
+            attrs: {"rel": "stylesheet", "type": "text/css", "href": "/overrides.css"},
+            injectTo: "head"
           },
         ]
       }
